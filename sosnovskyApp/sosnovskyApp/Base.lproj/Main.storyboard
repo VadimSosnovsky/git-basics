@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sosnovskyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mAa-LY-jHp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CFw-Rx-Weg">
+                                <rect key="frame" x="107" y="77" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="eNg-SO-uDZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="okU-Gc-zeM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtM-oK-lO2">
+                                <rect key="frame" x="282" y="355" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xtM-oK-lO2" secondAttribute="height" multiplier="1:1" id="gBW-1S-c70"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+" titleAlignment="center">
+                                    <backgroundConfiguration key="background" cornerRadius="75">
+                                        <color key="backgroundColor" red="0.38431376220000002" green="0.78431367870000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonIncreaseTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akH-Kd-HTw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-MX-VGc">
+                                <rect key="frame" x="82" y="355" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zk6-MX-VGc" secondAttribute="height" multiplier="1:1" id="klZ-cz-Lmf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-" titleAlignment="center">
+                                    <backgroundConfiguration key="background" cornerRadius="75">
+                                        <color key="backgroundColor" red="0.38431372549019605" green="0.78431372549019607" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonDecreaseTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1yv-9l-h2W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb4-uF-yR4">
+                                <rect key="frame" x="200.5" y="368.5" width="13" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.63529413940000001" green="0.50588238240000005" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKp-gx-LkS">
+                                <rect key="frame" x="122" y="458" width="170" height="61"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset">
+                                    <backgroundConfiguration key="background" cornerRadius="25">
+                                        <color key="backgroundColor" red="0.97254901960784312" green="0.4392156862745098" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonResetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wr2-3p-iel"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i9Z-nF-fdT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xtM-oK-lO2" firstAttribute="leading" secondItem="AKp-gx-LkS" secondAttribute="trailing" constant="-10" id="3EQ-EP-drW"/>
+                            <constraint firstItem="cb4-uF-yR4" firstAttribute="top" secondItem="CFw-Rx-Weg" secondAttribute="bottom" constant="91.5" id="5ks-g1-NkZ"/>
+                            <constraint firstItem="i9Z-nF-fdT" firstAttribute="trailing" secondItem="xtM-oK-lO2" secondAttribute="trailing" constant="82" id="92O-bk-zRj"/>
+                            <constraint firstItem="AKp-gx-LkS" firstAttribute="leading" secondItem="zk6-MX-VGc" secondAttribute="trailing" constant="-10" id="BTJ-VF-nF8"/>
+                            <constraint firstItem="i9Z-nF-fdT" firstAttribute="trailing" secondItem="AKp-gx-LkS" secondAttribute="trailing" constant="122" id="EfN-NG-H7l"/>
+                            <constraint firstItem="xtM-oK-lO2" firstAttribute="top" secondItem="CFw-Rx-Weg" secondAttribute="bottom" constant="78" id="HDE-C0-udS"/>
+                            <constraint firstItem="AKp-gx-LkS" firstAttribute="height" secondItem="cb4-uF-yR4" secondAttribute="height" multiplier="2.54167" id="K9a-Tb-fJn"/>
+                            <constraint firstItem="CFw-Rx-Weg" firstAttribute="centerX" secondItem="i9Z-nF-fdT" secondAttribute="centerX" id="Laf-Oc-2Zc"/>
+                            <constraint firstItem="cb4-uF-yR4" firstAttribute="centerX" secondItem="i9Z-nF-fdT" secondAttribute="centerX" id="RHE-IY-Ljj"/>
+                            <constraint firstItem="AKp-gx-LkS" firstAttribute="top" secondItem="cb4-uF-yR4" secondAttribute="bottom" constant="65.5" id="T2L-ZZ-gwO"/>
+                            <constraint firstItem="AKp-gx-LkS" firstAttribute="leading" secondItem="i9Z-nF-fdT" secondAttribute="leading" constant="122" id="Xc1-yk-6Uf"/>
+                            <constraint firstItem="zk6-MX-VGc" firstAttribute="top" secondItem="CFw-Rx-Weg" secondAttribute="bottom" constant="78" id="k3c-2f-Pre"/>
+                            <constraint firstItem="zk6-MX-VGc" firstAttribute="leading" secondItem="i9Z-nF-fdT" secondAttribute="leading" constant="82" id="v23-jP-ZT1"/>
+                            <constraint firstItem="CFw-Rx-Weg" firstAttribute="top" secondItem="i9Z-nF-fdT" secondAttribute="top" constant="33" id="yZK-ZW-tqo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonDecrease" destination="zk6-MX-VGc" id="rdB-IP-M3F"/>
+                        <outlet property="buttonIncrease" destination="xtM-oK-lO2" id="HSk-cL-ubq"/>
+                        <outlet property="labelResult" destination="cb4-uF-yR4" id="bKl-W0-KyY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="1024" height="1024"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
