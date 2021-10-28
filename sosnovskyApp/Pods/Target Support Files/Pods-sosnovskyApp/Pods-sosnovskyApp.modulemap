@@ -1,6 +1,0 @@
-framework module Pods_sosnovskyApp {
-  umbrella header "Pods-sosnovskyApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
